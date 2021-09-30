@@ -1,0 +1,12 @@
+.footer {
+    height: 4rem;
+    font-size: 1rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer span {
+    color: orange;
+}
