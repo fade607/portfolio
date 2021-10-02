@@ -4,37 +4,40 @@
     justify-content: center;
     color: #fff;
     font-size: 2.4rem;
-    margin-bottom: 20px;
+    padding-top: 50px;
 }
 
 .contact-me {
     background-color: rgba(0, 0, 0, 0.87);
 }
 
+.form {
+    margin-top: -10px;
+}
+
 .contact {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 20px;
-    height: 102%;
+    height: 87vh;
     width: 100%;
     color: #fff;
-    padding: 6rem 7rem;
+    padding: 5rem 6rem 3rem 6rem;
 }
 
 .form textarea {
     width: 30vw;
-    height: 5rem;
+    height: 3rem;
     background: none;
     border: none;
     color: #fff;
     font-size: 1rem;
     border-bottom: 1px solid #fff;
     outline: none;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .form form {
-    padding-top: 30px;
     display: flex;
     flex-direction: column;
 }
@@ -63,7 +66,7 @@
 }
 
 .media {
-    padding: 10px 50px;
+    padding: 30px;
 }
 
 .media h1 {
@@ -80,6 +83,11 @@
 .media .media-text p {
     font-size: 1rem;
     margin: 5px 1px;
+}
+
+.media .media-text p span {
+    color: #fff;
+    font-size: 1.2rem;
 }
 
 .media ul {
@@ -140,7 +148,7 @@
         width: 100%;
     }
     .media {
-        padding-top: 50px;
+        padding-top: 130px;
         padding-bottom: 5px;
         width: 100%;
     }
@@ -152,9 +160,6 @@
 @media (max-width: 450px) {
     .media ul li {
         font-size: 1rem;
-    }
-    .media {
-        padding: 1px;
     }
 }
 

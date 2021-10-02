@@ -1,9 +1,16 @@
 import React, { useState } from "react";
+import { FiAlignJustify } from "react-icons/fi";
+import { BsX } from "react-icons/bs";
 
+import Sidbar from "./Sidbar";
 import "../css/navbar.css";
 import { HashLink as Link } from "react-router-hash-link";
 function Navbar() {
-  const [openNav, setOpenNav] = useState(false);
+  const [openSid, setOpenSid] = useState(false);
+  const openSidbar = (e) => {
+    setOpenSid(!openSid);
+    console.log(openSid);
+  };
 
   return (
     <div className="nav">
@@ -38,30 +45,35 @@ function Navbar() {
             </Link>
           </ul>
         </div>
-        <div className="sid_icon">
-          <button>f</button>
-        </div>
-      </div>
-      <div className="sid_list">
-        <ul>
-          <Link smooth to="#">
-            Home
-          </Link>
-          <Link smooth to="#about">
-            About
-          </Link>
 
-          <Link smooth to="#skills">
-            Skills
-          </Link>
-          <Link smooth to="#projects">
-            Projects
-          </Link>
-          <Link smooth to="#contact">
-            Contact
-          </Link>
-        </ul>
+        <button className="sid_icon" onClick={() => openSidbar(openSid)}>
+          {console.log(openSid)}
+          {openSid ? <BsX /> : <FiAlignJustify />}
+        </button>
       </div>
+      {openSid ? (
+        <div className="sidbar">
+          {" "}
+          <ul>
+            <Link smooth to="#home" onClick={() => openSidbar(openSid)}>
+              Home
+            </Link>
+            <Link smooth to="#about" onClick={() => openSidbar(openSid)}>
+              About
+            </Link>
+
+            <Link smooth to="#skills" onClick={() => openSidbar(openSid)}>
+              Skills
+            </Link>
+            <Link smooth to="#projects" onClick={() => openSidbar(openSid)}>
+              Projects
+            </Link>
+            <Link smooth to="#contact" onClick={() => openSidbar(openSid)}>
+              Contact
+            </Link>
+          </ul>
+        </div>
+      ) : null}
     </div>
   );
 }

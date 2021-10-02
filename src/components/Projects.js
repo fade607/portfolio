@@ -17,18 +17,6 @@ function Projects() {
             <img src="../images/project2.png" alt="project 1" />
           </a>
         </div>
-        <div className="project">
-          <a href="https://focused-mccarthy-2e4a04.netlify.app/">
-            {" "}
-            <img src="../images/project1.png" alt="project 1" />
-          </a>
-        </div>
-        <div className="project">
-          <a href="https://focused-mccarthy-2e4a04.netlify.app/">
-            {" "}
-            <img src="../images/project1.png" alt="project 1" />
-          </a>
-        </div>
       </div>
     </div>
   );

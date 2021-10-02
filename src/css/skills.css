@@ -105,7 +105,7 @@
 }
 
 .box .percent .number h2 span {
-    font-size: 1.7rem;
+    font-size: 1rem;
 }
 
 .box .percent .text {
@@ -115,7 +115,8 @@
 }
 
 .box .percent .text h2 {
-    font-size: 2rem;
+    margin-top: -25px;
+    font-size: 1.5rem;
 }
 
 .html .percent svg circle:nth-child(2) {
@@ -214,7 +215,7 @@
         padding: 20px 30px;
     }
     .box {
-        width: 28vw;
+        width: 30vw;
     }
 }
 
@@ -227,10 +228,11 @@
         justify-items: center;
     }
     .box {
-        width: 70vw;
+        width: 50vw;
     }
     .box .percent .number h2 {
         font-size: 2rem;
+        margin-top: -20px;
     }
     .box .percent .number h2 span {
         font-size: 1rem;
@@ -246,6 +248,8 @@
     }
     .svg {
         width: 33vw;
+        margin-left: 10px;
+        margin-top: -7px;
     }
 }
 
@@ -261,5 +265,20 @@
     }
     .skills-title {
         font-size: 0.8rem;
+    }
+    .svg {
+        width: 33vw;
+        margin-left: -10px;
+        margin-top: -7px;
+    }
+}
+
+@media (max-width: 300px) {
+    .svg {
+        width: 80vw;
+        height: 80vw;
+    }
+    .box {
+        width: 90%;
     }
 }

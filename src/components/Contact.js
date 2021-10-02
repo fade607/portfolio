@@ -1,14 +1,7 @@
 import React from "react";
 import emailjs from "emailjs-com";
 import { GoMarkGithub } from "react-icons/go";
-import {
-  GrInstagram,
-  GrLinkedin,
-  GrMail,
-  GrFacebook,
-  GrLocation,
-  GrTwitter,
-} from "react-icons/gr";
+import { GrInstagram, GrLinkedin, GrFacebook, GrTwitter } from "react-icons/gr";
 import video from "../video/video.mp4";
 
 import { ImWhatsapp } from "react-icons/im";
@@ -47,7 +40,7 @@ function Contact() {
         style={{
           position: "absolute",
           width: "100%",
-          height: "98%",
+          height: "100%",
           objectFit: "cover",
           zIndex: "-1",
         }}
@@ -79,8 +72,9 @@ function Contact() {
             <h1>Name:</h1>
             <p>Fade Ahmad</p>
             <h1>Address:</h1>
-            <p>Coimbatore, India</p>
-            <p>Tartous, Syria</p>
+
+            <p> Coimbatore, India</p>
+            <p> Tartous, Syria</p>
             <h1>Email:</h1>
             <p>ffaaddee607122@gamil.com</p>
           </div>

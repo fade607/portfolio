@@ -7,6 +7,16 @@
     justify-content: center;
 }
 
+.footer h2 {
+    font-size: 1rem;
+}
+
+@media (max-width: 700px) {
+    .footer h2 {
+        font-size: 0.8rem;
+    }
+}
+
 .footer span {
     color: orange;
 }
