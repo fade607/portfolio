@@ -1,11 +1,11 @@
 import React from "react";
-// import Particles from "react-particles-js";
+import Particles from "react-particles-js";
 import "../css/header.css";
 function Header() {
   return (
     <div className="header">
       <div className="header-background">
-        {/* <Particles
+        <Particles
           params={{
             particles: {
               number: {
@@ -24,7 +24,7 @@ function Header() {
               },
             },
           }}
-        /> */}
+        />
       </div>
 
       <div className="header_content">

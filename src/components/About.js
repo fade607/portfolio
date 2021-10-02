@@ -12,8 +12,8 @@ function About() {
         <img src="../images/about.jfif" alt="" data-aos="fade-left" />
         <div data-aos="fade-right">
           <p>
-            I'm Fade and I'm a{" "}
-            <span> fullstack web developer and UI/UX designer</span>, I have a
+            I'm Fade, and I'm a{" "}
+            <span> full-stack web developer and UI/UX designer</span>, I have a
             passion for building and developing websites.
           </p>{" "}
           <button className="btn-cv">View CV</button>

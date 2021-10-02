@@ -17,6 +17,12 @@
     }
 }
 
+@media (max-width: 380px) {
+    .footer h2 {
+        font-size: 0.6rem;
+    }
+}
+
 .footer span {
     color: orange;
 }

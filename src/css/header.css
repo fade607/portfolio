@@ -22,7 +22,7 @@
     background-color: rgba(240, 248, 255, 0.027);
     width: 25vw;
     border-radius: 50%;
-    border: 1.5px solid orange;
+    border: 10px solid rgba(255, 166, 0, 0.103);
 }
 
 .text-left {
@@ -79,9 +79,12 @@ h1 span {
     .header-background {
         height: 50vh;
     }
+    .image-right img {
+        border: 2px solid rgba(255, 166, 0, 0.103);
+    }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 550px) {
     .header_content {
         display: grid;
         grid-template-columns: 1fr;

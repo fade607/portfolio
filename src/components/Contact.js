@@ -14,7 +14,7 @@ const sendEmail = (e) => {
   emailjs
     .sendForm(
       "gmail",
-      "service_wt9p42c",
+      "template_3kqsydv",
       e.target,
       "user_ZXzXAmaMx1QfQCoxYGkzE"
     )
@@ -55,10 +55,10 @@ function Contact() {
             out more, please fill the form below and let’s get things moving.
           </h2>
           <form onSubmit={sendEmail}>
-            <input type="text" placeholder="Full Name" name="name" />
-            <input type="email" placeholder="Email" name="email" />
+            <input type="text" placeholder="Full Name" name="name" id="name" />
+            <input type="email" placeholder="Email" name="email" id="email" />
 
-            <input type="text" placeholder="Subject" name="subject" />
+            <input type="text" placeholder="Subject" name="subject" id />
             <textarea type="textarea" placeholder="Message..." name="message" />
             <br />
             <button className="btn" type="submit">
