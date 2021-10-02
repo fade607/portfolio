@@ -90,3 +90,10 @@
     cursor: pointer;
     box-shadow: 2px 2px 2px rgba(255, 166, 0, 0.514);
 }
+
+@media (max-width: 750px) {
+    .btn-cv {
+        font-size: 0.8rem;
+        width: auto;
+    }
+}

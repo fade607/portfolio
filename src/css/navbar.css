@@ -24,15 +24,33 @@
 }
 
 .nav-list a {
+    position: relative;
     color: white;
     font-size: 1.2rem;
     text-decoration: none;
-    padding: 1px 25px;
+    margin: 1px 25px;
+    padding: -10px 7px;
+    transition: background-size 0.4s ease;
+    background: linear-gradient(to bottom, transparent 62%, #fff87e 0) center center/0% 75% no-repeat;
+}
+
+.nav-list ul a:after {
+    content: "";
+    position: absolute;
+    background-color: orange;
+    height: 3px;
+    width: 0;
+    left: 0;
+    top: 23px;
+    transition: 0.3s;
+}
+
+.nav-list ul a:hover::after {
+    width: 100%;
 }
 
 .sid_list {
     display: flex;
-    background-color: red;
 }
 
 .sid_icon {
@@ -56,7 +74,7 @@
 /* sidbar */
 
 .sidbar {
-    background-color: #444;
+    background-color: #000;
     height: 100%;
     width: 100%;
     position: absolute;

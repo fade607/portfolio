@@ -3,7 +3,7 @@ import "../css/projects.css";
 function Projects() {
   return (
     <div div className="my_project">
-      <h1>My Project</h1>
+      <h1>My Projects</h1>
       <div id="projects" className="projects">
         <div className="project">
           <a href="https://focused-mccarthy-2e4a04.netlify.app/">

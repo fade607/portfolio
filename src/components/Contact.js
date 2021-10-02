@@ -10,22 +10,16 @@ import "../css/contact.css";
 
 const sendEmail = (e) => {
   e.preventDefault();
-
   emailjs
     .sendForm(
-      "gmail",
-      "template_3kqsydv",
+      "service_75gss3k",
+      "template_iy9qtnc",
       e.target,
       "user_ZXzXAmaMx1QfQCoxYGkzE"
     )
-    .then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    .then((res) => {
+      console.log(res);
+    });
   e.target.reset();
 };
 
